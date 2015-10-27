@@ -1,10 +1,3 @@
-//
-//  Transducer.h
-//  Transducer
-//
-//  Created by Elviro Rocca on 27/10/15.
-//  Copyright © 2015 Elvi. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 

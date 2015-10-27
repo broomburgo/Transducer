@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		38910C6D1BDF961C00F399B9 /* Transducer.h in Headers */ = {isa = PBXBuildFile; fileRef = 38910C6C1BDF961C00F399B9 /* Transducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38910C751BDF962C00F399B9 /* Transducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38910C741BDF962C00F399B9 /* Transducer.swift */; settings = {ASSET_TAGS = (); }; };
+		38910C7D1BDFA20300F399B9 /* TransducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38910C7C1BDFA20300F399B9 /* TransducerTests.swift */; };
+		38910C7F1BDFA20300F399B9 /* Transducer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38910C691BDF961C00F399B9 /* Transducer.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38910C801BDFA20300F399B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38910C601BDF961B00F399B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38910C681BDF961C00F399B9;
+			remoteInfo = Transducer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		38910C691BDF961C00F399B9 /* Transducer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Transducer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38910C6C1BDF961C00F399B9 /* Transducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transducer.h; sourceTree = "<group>"; };
 		38910C6E1BDF961C00F399B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38910C741BDF962C00F399B9 /* Transducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transducer.swift; sourceTree = "<group>"; };
+		38910C7A1BDFA20300F399B9 /* TransducerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransducerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38910C7C1BDFA20300F399B9 /* TransducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransducerTests.swift; sourceTree = "<group>"; };
+		38910C7E1BDFA20300F399B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38910C771BDFA20300F399B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38910C7F1BDFA20300F399B9 /* Transducer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				38910C6B1BDF961C00F399B9 /* Transducer */,
+				38910C7B1BDFA20300F399B9 /* TransducerTests */,
 				38910C6A1BDF961C00F399B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				38910C691BDF961C00F399B9 /* Transducer.framework */,
+				38910C7A1BDFA20300F399B9 /* TransducerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +75,18 @@
 			children = (
 				38910C6C1BDF961C00F399B9 /* Transducer.h */,
 				38910C6E1BDF961C00F399B9 /* Info.plist */,
+				38910C741BDF962C00F399B9 /* Transducer.swift */,
 			);
 			path = Transducer;
+			sourceTree = "<group>";
+		};
+		38910C7B1BDFA20300F399B9 /* TransducerTests */ = {
+			isa = PBXGroup;
+			children = (
+				38910C7C1BDFA20300F399B9 /* TransducerTests.swift */,
+				38910C7E1BDFA20300F399B9 /* Info.plist */,
+			);
+			path = TransducerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,38 @@
 			productReference = 38910C691BDF961C00F399B9 /* Transducer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		38910C791BDFA20300F399B9 /* TransducerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38910C821BDFA20300F399B9 /* Build configuration list for PBXNativeTarget "TransducerTests" */;
+			buildPhases = (
+				38910C761BDFA20300F399B9 /* Sources */,
+				38910C771BDFA20300F399B9 /* Frameworks */,
+				38910C781BDFA20300F399B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38910C811BDFA20300F399B9 /* PBXTargetDependency */,
+			);
+			name = TransducerTests;
+			productName = TransducerTests;
+			productReference = 38910C7A1BDFA20300F399B9 /* TransducerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		38910C601BDF961B00F399B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Elvi;
 				TargetAttributes = {
 					38910C681BDF961C00F399B9 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					38910C791BDFA20300F399B9 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
@@ -111,12 +170,20 @@
 			projectRoot = "";
 			targets = (
 				38910C681BDF961C00F399B9 /* Transducer */,
+				38910C791BDFA20300F399B9 /* TransducerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		38910C671BDF961C00F399B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38910C781BDFA20300F399B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +197,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38910C751BDF962C00F399B9 /* Transducer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38910C761BDFA20300F399B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38910C7D1BDFA20300F399B9 /* TransducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38910C811BDFA20300F399B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38910C681BDF961C00F399B9 /* Transducer */;
+			targetProxy = 38910C801BDFA20300F399B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		38910C6F1BDF961C00F399B9 /* Debug */ = {
@@ -228,6 +312,25 @@
 		38910C721BDF961C00F399B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Transducer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.elvi.Transducer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38910C731BDF961C00F399B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -239,21 +342,25 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		38910C731BDF961C00F399B9 /* Release */ = {
+		38910C831BDFA20300F399B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Transducer/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = TransducerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.elvi.Transducer;
+				PRODUCT_BUNDLE_IDENTIFIER = it.elvi.TransducerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		38910C841BDFA20300F399B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransducerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.elvi.TransducerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -274,6 +381,14 @@
 			buildConfigurations = (
 				38910C721BDF961C00F399B9 /* Debug */,
 				38910C731BDF961C00F399B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38910C821BDFA20300F399B9 /* Build configuration list for PBXNativeTarget "TransducerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38910C831BDFA20300F399B9 /* Debug */,
+				38910C841BDFA20300F399B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
