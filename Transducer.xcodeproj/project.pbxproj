@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3879FFCC1BE7649F00551D33 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3879FFCB1BE7649F00551D33 /* Reducer.swift */; };
 		38910C6D1BDF961C00F399B9 /* Transducer.h in Headers */ = {isa = PBXBuildFile; fileRef = 38910C6C1BDF961C00F399B9 /* Transducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38910C751BDF962C00F399B9 /* Transducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38910C741BDF962C00F399B9 /* Transducer.swift */; settings = {ASSET_TAGS = (); }; };
+		38910C751BDF962C00F399B9 /* Transducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38910C741BDF962C00F399B9 /* Transducer.swift */; };
 		38910C7D1BDFA20300F399B9 /* TransducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38910C7C1BDFA20300F399B9 /* TransducerTests.swift */; };
-		38910C7F1BDFA20300F399B9 /* Transducer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38910C691BDF961C00F399B9 /* Transducer.framework */; settings = {ASSET_TAGS = (); }; };
+		38910C7F1BDFA20300F399B9 /* Transducer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38910C691BDF961C00F399B9 /* Transducer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3879FFCB1BE7649F00551D33 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		38910C691BDF961C00F399B9 /* Transducer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Transducer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38910C6C1BDF961C00F399B9 /* Transducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transducer.h; sourceTree = "<group>"; };
 		38910C6E1BDF961C00F399B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				38910C6C1BDF961C00F399B9 /* Transducer.h */,
 				38910C6E1BDF961C00F399B9 /* Info.plist */,
 				38910C741BDF962C00F399B9 /* Transducer.swift */,
+				3879FFCB1BE7649F00551D33 /* Reducer.swift */,
 			);
 			path = Transducer;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3879FFCC1BE7649F00551D33 /* Reducer.swift in Sources */,
 				38910C751BDF962C00F399B9 /* Transducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +387,7 @@
 				38910C731BDF961C00F399B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38910C821BDFA20300F399B9 /* Build configuration list for PBXNativeTarget "TransducerTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +396,7 @@
 				38910C841BDFA20300F399B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

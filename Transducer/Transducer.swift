@@ -18,7 +18,7 @@ public struct Transducer<Accumulator,Element1,Element2>
 }
 
 /// quick way to define a custom transducer, considering the previous reducer and the new accumulator and element
-func customTransducer <Acc,E1,E2> (customChange: (((Acc,E2) -> Acc), Acc, E1) -> Acc) -> Transducer<Acc,E1,E2>
+public func customTransducer <Acc,E1,E2> (customChange: (((Acc,E2) -> Acc), Acc, E1) -> Acc) -> Transducer<Acc,E1,E2>
 {
   return Transducer { reducer in
     return { accumulator, element in
@@ -36,7 +36,7 @@ public func emptyTransducer <Acc,E> () -> Transducer<Acc,E,E>
 }
 
 /// lifts 'map' in the transducer world
-func mappingTransducer <Acc,E1,E2> (change: E1 -> E2) -> Transducer<Acc,E1,E2>
+public func mappingTransducer <Acc,E1,E2> (change: E1 -> E2) -> Transducer<Acc,E1,E2>
 {
   return customTransducer { reducer, accumulator, element in
     return reducer(accumulator,change(element))
@@ -44,7 +44,7 @@ func mappingTransducer <Acc,E1,E2> (change: E1 -> E2) -> Transducer<Acc,E1,E2>
 }
 
 /// lifts 'filter' in the transducer world
-func filteringTransducer <Acc,E> (filter: E -> Bool) -> Transducer<Acc,E,E>
+public func filteringTransducer <Acc,E> (filter: E -> Bool) -> Transducer<Acc,E,E>
 {
   return customTransducer { reducer, accumulator, element in
     return filter(element) ? reducer(accumulator,element) : accumulator
